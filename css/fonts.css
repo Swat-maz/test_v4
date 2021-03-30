@@ -1,0 +1,9 @@
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sanss";
+  src: url("/fonts/open-sans-v18-latin_cyrillic-regular.eot") format("embedded-opentype"), url("/fonts/open-sans-v18-latin_cyrillic-regular.woff2") format("woff2"), url("/fonts/open-sans-v18-latin_cyrillic-regular.woff") format("woff"), url("/fonts/open-sans-v18-latin_cyrillic-regular.ttf") format("truetype"), url("/fonts/open-sans-v18-latin_cyrillic-regular.svg") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal; }
+
+/*# sourceMappingURL=fonts.css.map */

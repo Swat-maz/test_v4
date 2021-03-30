@@ -1,0 +1,167 @@
+/* open-sans-regular - latin_cyrillic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sanss";
+  src: url("/fonts/open-sans-v18-latin_cyrillic-regular.eot") format("embedded-opentype"), url("/fonts/open-sans-v18-latin_cyrillic-regular.woff2") format("woff2"), url("/fonts/open-sans-v18-latin_cyrillic-regular.woff") format("woff"), url("/fonts/open-sans-v18-latin_cyrillic-regular.ttf") format("truetype"), url("/fonts/open-sans-v18-latin_cyrillic-regular.svg") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal; }
+
+body {
+  font-family: "Open Sanss";
+  font-size: 16px;
+  min-width: 100%;
+  height: 100vh; }
+
+.title {
+  font-size: 35px; }
+
+.container {
+  width: 1220px;
+  margin: 0 auto; }
+
+.main-color {
+  color: #303030; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+header {
+  height: 100px;
+  min-width: 100%;
+  display: flex;
+  box-shadow: 0px 5px 5px 0px rgba(223, 223, 223, 0.6); }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1220px;
+    margin: 0 auto; }
+    header .container ul {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header .container ul li {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 9px; }
+        header .container ul li:last-child {
+          margin-right: 0; }
+      header .container ul a {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        height: 40px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #666666; }
+        header .container ul a:hover {
+          background-color: #eeefef;
+          color: #2f7bb8; }
+      header .container ul .zayava {
+        background-color: #2f7bb8;
+        color: #fff;
+        border-radius: 20px;
+        width: 139px;
+        justify-content: center; }
+
+.registration {
+  background-color: #f7f7f7;
+  width: auto; }
+  .registration .container {
+    display: flex; }
+  .registration .star {
+    color: red; }
+  .registration_info {
+    max-width: 50%;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    margin-top: 48px; }
+    .registration_info h2 {
+      font-size: 34px; }
+    .registration_info p {
+      font-size: 20px;
+      text-align: center;
+      padding-top: 30px;
+      color: #787878; }
+  .registration_form {
+    max-width: 50%;
+    margin: 0 10px;
+    margin-top: 45px; }
+    .registration_form .form__item {
+      margin-top: 13px; }
+      .registration_form .form__item .input {
+        width: 590px;
+        height: 54px;
+        margin-top: 5px; }
+    .registration_form .scales {
+      margin-top: 23px; }
+    .registration_form #wisited {
+      text-decoration: none; }
+      .registration_form #wisited:visited {
+        color: blue; }
+      .registration_form #wisited:hover {
+        text-decoration: underline; }
+    .registration_form .form__body {
+      display: flex;
+      flex-direction: column; }
+    .registration_form #send {
+      width: 370px;
+      height: 50px;
+      margin: 30px auto;
+      background-color: #337AB7;
+      border: none;
+      border-radius: 20px;
+      font-size: 12px;
+      color: #fff;
+      text-transform: uppercase; }
+
+.courses .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .courses .container .course__slider {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+    .courses .container .course__slider .slick-track {
+      width: 100%; }
+    .courses .container .course__slider .slick-slide {
+      min-width: 30%; }
+    .courses .container .course__slider .post {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  height: 156px;
+  background-color: #84a; }
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .footer .container p {
+      font-size: 16px;
+      color: #3199dc;
+      padding: 10px; }
+      .footer .container p a {
+        text-decoration: none;
+        color: #8f8f8f; }
+        .footer .container p a:hover {
+          text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */

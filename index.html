@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="/libs/slick/slick.css">
+  <link rel="stylesheet" href="/libs/slick/slick-theme.css">
+  <title>OxiT</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <img src="/img/logo_Oxit.png" alt="OxiT Logo" width="80" height="80">
+        <div class="menu">
+          <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#courses">Програма курсу</a></li>
+            <li><a href="">Відгуки про курс</a></li>
+            <li><a href="">Відео</a></li>
+            <li><a href="">Ментори</a></li>
+            <li><a class="zayava" href="#registration">Подати заявку</a></li>
+          </ul>
+        </div>
+      </div>  
+    </header>
+
+    <div class="registration ">
+      <div class="container">
+        <a name="registration"></a>
+        <div class="registration_info">
+          <div class="title">Курси програмування у Луцьку</div>
+          <p>Сфера IT розвивається максимально швидко. Зараз дуже популярно здобувати освіту, що повязана з ІТ. Існує лише одна проблема - брак дійсно кваліфікованих спеціалістів в Україні. Під час навчання в університеті ми отримуємо мало практики і "живих", реальних кейсів. ІT Школа ОхIT створила таку методику навчання, при якій за короткий час ви отримаєте необхідні знання, щоб стати IT спеціалістом. Чекаємо Вас на нших курсах з програмування в Луцьку. Старт наступного курсу 3 серпня.</p>
+        </div>
+        <div class="registration_form">
+          <form id="myform" class="form__body" action="">
+            <h2>Зареєструватися на курси</h2>
+            <div class="form__item">
+              <label for="name">Ім'я <span class="star">*</span></label>
+              <input class="input" type="text" name="name"  minlength="2" required placeholder="Ім'я">
+            </div>
+            <div class="form__item">
+              <label for="last_name">Прізвище <span class="star">*</span></label>
+              <input class="input" type="text" name="last_name"  minlength="2" required placeholder="Прізвище">
+            </div>
+            <div class="form__item">
+              <label for="interested">Мене більше цікавить <span class="star">*</span></label>
+              <input class="input" type="text" name="interested"  minlength="2" maxlength="9" required placeholder="developer or QA" pattern="(developer)|(QA)">
+            </div>
+            <div class="form__item">
+              <label for="phone">Номер телефону <span class="star">*</span></label>
+              <input class="input" type="tel" pattern="[\+][3][8]\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}\s[0-9]{3}" name="phone" required placeholder="Номер телефону: +38 XXX XX XX XXX">
+            </div>
+            <div class="form__item">
+              <label for="name">Email <span class="star">*</span></label>
+              <input class="input" type="email" autocomplete="on" placeholder="Email"  name="email" required>
+            </div>
+            <div class="scales">
+              <input type="checkbox" id="scales" name="scales" placeholder="" required>
+              <label for="scales">Я погоджуюсь із <a id="wisited" href="">Політикою конфедеційності</a> <span class="star">*</span></label>
+            </div>
+            <input id="send" type="submit" value="Зареєструватися Зараз" onclick="validateForm()">
+          </form>
+        </div>
+      </div>  
+    </div>
+
+    <div class="courses">
+      <a name="courses"></a>
+      <div class="container">
+        <div class="title">Курс &laquo;Розробка сайтів&raquo;</div>
+        <div class="course__slider">
+          <div class="post">
+            <img src="/img/icons/course-icon-1.png" alt="1" width="90" height="90">
+            <div class="post__title">Розробка сайтів на WordPress</div>
+            <div class="post__body">Курс складається з коротких навчальних
+              Відео, на яких ти пізнаеш основи WordPress,
+              навчишся створювати сайти різної
+              складності: від блогів до Інтернет магазинів.
+              Всі знання закріпиш за допомогою тестових
+              завдань.</div>
+          </div>
+          <div class="post">
+            <img src="/img/icons/course-icon-2.png" alt="1" width="90" height="90">
+            <div class="post__title">Розробка сайтів на WordPress</div>
+            <div class="post__body">Курс складається з коротких навчальних
+              Відео, на яких ти пізнаеш основи WordPress,
+              навчишся створювати сайти різної
+              складності: від блогів до Інтернет магазинів.
+              Всі знання закріпиш за допомогою тестових
+              завдань.</div>
+          </div>
+          <div class="post">
+            <img src="/img/icons/course-icon-3.png" alt="1" width="90" height="90">
+            <div class="post__title">Розробка сайтів на WordPress</div>
+            <div class="post__body">Курс складається з коротких навчальних
+              Відео, на яких ти пізнаеш основи WordPress,
+              навчишся створювати сайти різної
+              складності: від блогів до Інтернет магазинів.
+              Всі знання закріпиш за допомогою тестових
+              завдань.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <p><span>&copy;</span> Copyright 2018-2020 Internet Devels</p>
+        <p><a href=""> Умови політики конфіденційності</a></p>
+      </div>
+    </footer>
+  </div>
+  <SCRIPT type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></SCRIPT>
+  <script src="/libs/slick/slick.min.js"></script>
+  <script type="text/javascript" src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"version":3,"file":"reset.css","sources":["reset.scss"],"sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}"],"names":[],"mappings":"AAAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU,GACzB"}
