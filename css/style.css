@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* open-sans-regular - latin_cyrillic */
 * {
   margin: 0;
@@ -18,20 +19,36 @@ body {
   min-width: 100%;
   height: 100vh; }
 
+.mcolor {
+  color: #333333; }
+
+.scolor {
+  color: #666666; }
+
 .title {
-  font-size: 35px; }
+  font-size: 35px;
+  color: #333333; }
 
 .container {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto; }
-
-.main-color {
-  color: #303030; }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
+
+.blue {
+  background-color: #3498db;
+  color: #fff; }
+  .blue a {
+    color: #fff;
+    text-decoration: none; }
+    .blue a:hover {
+      text-decoration: underline; }
+
+.italic {
+  font-style: italic; }
 
 header {
   height: 100px;
@@ -74,14 +91,15 @@ header {
 
 .registration {
   background-color: #f7f7f7;
-  width: auto; }
+  width: auto;
+  height: 665px; }
   .registration .container {
     display: flex; }
   .registration .star {
     color: red; }
   .registration_info {
     max-width: 50%;
-    height: 670px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,14 +115,11 @@ header {
       color: #787878; }
   .registration_form {
     max-width: 50%;
-    margin: 0 10px;
-    margin-top: 45px; }
-    .registration_form .form__item {
-      margin-top: 13px; }
-      .registration_form .form__item .input {
-        width: 590px;
-        height: 54px;
-        margin-top: 5px; }
+    margin: 0 10px; }
+    .registration_form .form__item .input {
+      width: 590px;
+      height: 54px;
+      margin-top: 5px; }
     .registration_form .scales {
       margin-top: 23px; }
     .registration_form #wisited {
@@ -115,14 +130,15 @@ header {
         text-decoration: underline; }
     .registration_form .form__body {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: space-between; }
     .registration_form #send {
       width: 370px;
       height: 50px;
       margin: 30px auto;
       background-color: #337AB7;
       border: none;
-      border-radius: 20px;
+      border-radius: 23px;
       font-size: 12px;
       color: #fff;
       text-transform: uppercase; }
@@ -130,25 +146,150 @@ header {
 .courses .container {
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .courses .container .course__slider {
+  align-items: center;
+  justify-content: center;
+  height: 563px; }
+  .courses .container .title {
+    margin-bottom: 40px; }
+  .courses .container .slick-slider {
+    min-width: 0; }
+  .courses .container .slick-list {
+    overflow: hidden;
+    min-width: 0;
+    max-width: 1220px;
+    margin: 0 auto; }
+  .courses .container .slick-track {
+    min-width: 0;
     display: flex;
     justify-content: space-around;
-    width: 100%; }
-    .courses .container .course__slider .slick-track {
-      width: 100%; }
-    .courses .container .course__slider .slick-slide {
-      min-width: 30%; }
-    .courses .container .course__slider .post {
+    width: 1170px; }
+  .courses .container .slick-slide {
+    width: 370px; }
+  .courses .container .post {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .courses .container .post img {
+      margin-bottom: 20px; }
+    .courses .container .post__title {
+      color: #666666;
+      font-size: 22px;
+      border-bottom: 1px solid #3498db;
+      padding: 18px 0;
+      margin-bottom: 35px;
+      flex-wrap: nowrap; }
+    .courses .container .post__body {
+      color: #888888;
+      text-align: center;
+      font-size: 16px;
+      width: 320px; }
+
+.achieve {
+  height: 310px; }
+  .achieve .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  .achieve__item {
+    text-align: center; }
+  .achieve__number {
+    font-size: 25px; }
+
+.reviews {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 525px; }
+  .reviews .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+  .reviews__title {
+    margin-bottom: 14px; }
+  .reviews__text {
+    font-size: 22px; }
+  .reviews .brackets {
+    display: flex; }
+    .reviews .brackets__right {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      justify-content: end; }
+  .reviews .slick-slider {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden; }
+  .reviews .slick-track {
+    display: flex;
+    overflow: hidden; }
+  .reviews .slick-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1220px; }
+  .reviews .slick-dots {
+    display: flex;
+    justify-content: center; }
+
+.videos {
+  background-color: #f7f7f7; }
+  .videos .container {
+    padding: 65px 0;
+    text-align: center; }
+    .videos .container iframe {
+      margin-top: 30px; }
+  .videos .title {
+    margin-bottom: 30px; }
+
+.mentors .title {
+  text-align: center; }
+
+.mentors__text {
+  font-size: 18px; }
+
+.mentors .slick-slider {
+  min-width: 0; }
+
+.mentors__item {
+  min-width: 0; }
+
+.mentors .slick-track {
+  display: flex;
+  max-width: 900px; }
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+/* Лента слайдов */
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+.contacts .container {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around; }
+
+.contacts__item {
+  text-align: center; }
 
 .footer {
   margin-top: auto;
   display: flex;
   height: 156px;
-  background-color: #84a; }
+  background-color: #f7f7f7; }
   .footer .container {
     display: flex;
     flex-direction: column;
