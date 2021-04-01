@@ -5,6 +5,51 @@
   padding: 0;
   box-sizing: border-box; }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html {
+  height: 100%; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 /* open-sans-regular - latin */
 @font-face {
   font-family: "Open Sanss";
@@ -17,7 +62,8 @@ body {
   font-family: "Open Sanss";
   font-size: 16px;
   min-width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  line-height: 30px; }
 
 .mcolor {
   color: #333333; }
@@ -32,6 +78,9 @@ body {
 .container {
   max-width: 1220px;
   margin: 0 auto; }
+
+:focus {
+  outline: none; }
 
 .wrapper {
   display: flex;
@@ -51,6 +100,9 @@ body {
   font-style: italic; }
 
 header {
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 1500;
   height: 100px;
   min-width: 100%;
   display: flex;
@@ -90,14 +142,19 @@ header {
         justify-content: center; }
 
 .registration {
+  margin-top: 100px;
   background-color: #f7f7f7;
   width: auto;
   height: 665px; }
   .registration .container {
-    display: flex; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; }
   .registration .star {
     color: red; }
   .registration_info {
+    line-height: 30px;
     max-width: 50%;
     height: 100%;
     display: flex;
@@ -106,8 +163,6 @@ header {
     align-items: center;
     margin: 0 30px;
     margin-top: 48px; }
-    .registration_info h2 {
-      font-size: 34px; }
     .registration_info p {
       font-size: 20px;
       text-align: center;
@@ -115,11 +170,22 @@ header {
       color: #787878; }
   .registration_form {
     max-width: 50%;
+    height: 100%;
     margin: 0 10px; }
+    .registration_form h2 {
+      font-size: 22px;
+      margin-top: 50px; }
     .registration_form .form__item .input {
-      width: 590px;
-      height: 54px;
-      margin-top: 5px; }
+      width: 100%;
+      height: 50px;
+      border: 1px solid #bababa;
+      border-radius: 5px;
+      margin-top: 5px;
+      padding: 0 15px; }
+      .registration_form .form__item .input:focus {
+        outline: none;
+        border: 1px solid #66afe9;
+        box-shadow: 0px 0px 10px 1px rgba(102, 175, 233, 0.5); }
     .registration_form .scales {
       margin-top: 23px; }
     .registration_form #wisited {
@@ -131,11 +197,12 @@ header {
     .registration_form .form__body {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
+      justify-content: space-around;
+      height: 100%; }
     .registration_form #send {
       width: 370px;
       height: 50px;
-      margin: 30px auto;
+      align-self: center;
       background-color: #337AB7;
       border: none;
       border-radius: 23px;
@@ -143,46 +210,64 @@ header {
       color: #fff;
       text-transform: uppercase; }
 
-.courses .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 563px; }
-  .courses .container .title {
-    margin-bottom: 40px; }
-  .courses .container .slick-slider {
-    min-width: 0; }
-  .courses .container .slick-list {
-    overflow: hidden;
-    min-width: 0;
-    max-width: 1220px;
-    margin: 0 auto; }
-  .courses .container .slick-track {
-    min-width: 0;
-    display: flex;
-    justify-content: space-around;
-    width: 1170px; }
-  .courses .container .slick-slide {
-    width: 370px; }
-  .courses .container .post {
+.courses {
+  background-color: #fff; }
+  .courses .container {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    .courses .container .post img {
-      margin-bottom: 20px; }
-    .courses .container .post__title {
-      color: #666666;
-      font-size: 22px;
-      border-bottom: 1px solid #3498db;
-      padding: 18px 0;
-      margin-bottom: 35px;
-      flex-wrap: nowrap; }
-    .courses .container .post__body {
-      color: #888888;
-      text-align: center;
-      font-size: 16px;
-      width: 320px; }
+    align-items: center;
+    justify-content: center;
+    height: 563px; }
+    .courses .container .title {
+      margin-bottom: 40px; }
+    .courses .container .slick-slider {
+      min-width: 0; }
+    .courses .container .slick-list {
+      overflow: hidden;
+      min-width: 0;
+      max-width: 1220px;
+      margin: 0 auto; }
+    .courses .container .slick-track {
+      min-width: 0;
+      display: flex;
+      justify-content: space-around;
+      width: 1170px; }
+    .courses .container .slick-slide {
+      width: 370px; }
+    .courses .container .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .courses .container .slick-dots li {
+      list-style: none;
+      margin: 0 10px; }
+    .courses .container .slick-dots li.slick-active button {
+      background-color: #666666; }
+    .courses .container .slick-dots li button {
+      font-size: 0;
+      border: none;
+      background-color: #b3b3b3;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%; }
+    .courses .container .post {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .courses .container .post img {
+        margin-bottom: 20px; }
+      .courses .container .post__title {
+        color: #666666;
+        font-size: 22px;
+        border-bottom: 1px solid #3498db;
+        padding: 18px 0;
+        margin-bottom: 35px;
+        flex-wrap: nowrap; }
+      .courses .container .post__body {
+        color: #888888;
+        text-align: center;
+        font-size: 16px;
+        width: 320px; }
 
 .achieve {
   height: 310px; }
@@ -197,6 +282,7 @@ header {
     font-size: 25px; }
 
 .reviews {
+  background-color: #fff;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -210,6 +296,8 @@ header {
     margin-bottom: 14px; }
   .reviews__text {
     font-size: 22px; }
+  .reviews__person {
+    margin-top: 40px; }
   .reviews .brackets {
     display: flex; }
     .reviews .brackets__right {
@@ -217,11 +305,13 @@ header {
       flex-direction: column;
       justify-content: end; }
   .reviews .slick-slider {
-    height: 50%;
+    height: max-content;
     display: flex;
     flex-direction: column;
     min-width: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: 20px;
+    max-width: 980px; }
   .reviews .slick-track {
     display: flex;
     overflow: hidden; }
@@ -231,8 +321,22 @@ header {
     justify-content: center;
     max-width: 1220px; }
   .reviews .slick-dots {
+    margin-top: 80px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: flex-end; }
+  .reviews .slick-dots li {
+    list-style: none;
+    margin: 0 10px; }
+  .reviews .slick-dots li.slick-active button {
+    background-color: #666666; }
+  .reviews .slick-dots li button {
+    font-size: 0;
+    border: none;
+    background-color: #b3b3b3;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; }
 
 .videos {
   background-color: #f7f7f7; }
@@ -240,25 +344,66 @@ header {
     padding: 65px 0;
     text-align: center; }
     .videos .container iframe {
-      margin-top: 30px; }
+      margin-top: 30px;
+      width: 100%; }
   .videos .title {
     margin-bottom: 30px; }
 
-.mentors .title {
-  text-align: center; }
-
-.mentors__text {
-  font-size: 18px; }
-
-.mentors .slick-slider {
-  min-width: 0; }
-
-.mentors__item {
-  min-width: 0; }
-
-.mentors .slick-track {
-  display: flex;
-  max-width: 900px; }
+.mentors {
+  background-color: #fff; }
+  .mentors .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0; }
+  .mentors__slider {
+    min-width: 0; }
+  .mentors .title {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px; }
+  .mentors__item {
+    display: flex;
+    min-width: 0; }
+    .mentors__item img {
+      margin-right: 100px; }
+  .mentors__title {
+    font-size: 21px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f7f7f7;
+    color: #3498db; }
+  .mentors__text {
+    font-size: 18px;
+    color: #666666; }
+    .mentors__text p {
+      margin-top: 20px; }
+  .mentors .slick-slider {
+    overflow: hidden;
+    width: 100%; }
+  .mentors .slick-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .mentors .slick-track {
+    display: flex; }
+  .mentors .slick-dots {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  .mentors .slick-dots li {
+    list-style: none;
+    margin: 0 10px; }
+  .mentors .slick-dots li.slick-active button {
+    background-color: #666666; }
+  .mentors .slick-dots li button {
+    font-size: 0;
+    border: none;
+    background-color: #b3b3b3;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; }
 
 /* Слайдер */
 /* Слайдер запущен */

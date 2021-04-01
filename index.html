@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/mobile.css">
   <!-- <link rel="stylesheet" href="/libs/slick/slick.css"> -->
   <!-- <link rel="stylesheet" href="/libs/slick/slick-theme.css"> -->
   <title>OxiT</title>
@@ -20,23 +21,23 @@
             <li><a href="#courses">Програма курсу</a></li>
             <li><a href="#reviews">Відгуки про курс</a></li>
             <li><a href="#video">Відео</a></li>
-            <li><a href="">Ментори</a></li>
+            <li><a href="#mentors">Ментори</a></li>
             <li><a class="zayava" href="#registration">Подати заявку</a></li>
           </ul>
         </div>
       </div>  
     </header>
-
+    
     <div class="registration ">
+      <a name="registration"></a>
       <div class="container">
-        <a name="registration"></a>
         <div class="registration_info">
           <div class="title">Курси програмування у Луцьку</div>
           <p>Сфера IT розвивається максимально швидко. Зараз дуже популярно здобувати освіту, що повязана з ІТ. Існує лише одна проблема - брак дійсно кваліфікованих спеціалістів в Україні. Під час навчання в університеті ми отримуємо мало практики і "живих", реальних кейсів. ІT Школа ОхIT створила таку методику навчання, при якій за короткий час ви отримаєте необхідні знання, щоб стати IT спеціалістом. Чекаємо Вас на нших курсах з програмування в Луцьку. Старт наступного курсу 3 серпня.</p>
         </div>
         <div class="registration_form">
           <form id="myform" class="form__body" action="">
-            <h2>Зареєструватися на курси</h2>
+            <h2 class="mcolor">Зареєструватися на курси</h2>
             <div class="form__item">
               <label for="name">Ім'я <span class="star">*</span></label>
               <input class="input" type="text" name="name"  minlength="2" required placeholder="Ім'я">
@@ -66,7 +67,7 @@
         </div>
       </div>  
     </div>
-
+    
     <div class="courses">
       <div class="container">
         <a name="courses"></a>
@@ -81,6 +82,11 @@
               складності: від блогів до Інтернет магазинів.
               Всі знання закріпиш за допомогою тестових
               завдань.</div>
+          </div>
+          <div class="post">
+            <img src="/img/icons/course-icon-2.png" alt="1" width="90" height="90">
+            <div class="post__title">Розробка сайтів на Drupal 8</div>
+            <div class="post__body">Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою, ти пізнаєш секрети основних та додаткових Drupal-модулів (Views, Rules, Panels, Devel, Paragraph та багатьох інших).</div>
           </div>
           <div class="post">
             <img src="/img/icons/course-icon-2.png" alt="1" width="90" height="90">
@@ -120,7 +126,7 @@
         </div>
       </div>
     </div>
-
+    
     <div class="reviews">
       <div class="container">
         <a name="reviews"></a>
@@ -173,8 +179,8 @@
     </div>
 
     <div class="videos">
-      <a name="video"></a>
       <div class="container">
+        <a name="video"></a>
         <div class="title mcolor">Відео</div>
         <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, non culpa quia excepturi nesciunt reiciendis vel facilis. Ipsa cupiditate deserunt nesciunt esse alias sapiente quas maiores minima vero debitis repellat, consequuntur neque possimus nisi nulla accusamus voluptate? Est nihil repudiandae magni dicta fugiat, accusantium praesentium reiciendis animi repellat earum ab modi maxime sed magnam. Blanditiis excepturi ipsam reiciendis possimus, deserunt quo voluptatem temporibus facilis suscipit laboriosam totam, eligendi tempora harum voluptatum necessitatibus minima recusandae aspernatur animi, molestiae similique accusamus in quod exercitationem neque. Necessitatibus ad illo placeat corporis est eligendi quibusdam nesciunt aliquid vitae amet! Tempora nobis aliquam eligendi voluptate.</div>
         <iframe width="1020" height="520" src="https://www.youtube.com/embed/qEdviZqTDP8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -183,12 +189,25 @@
 
     <div class="mentors">
       <div class="container">
+        <a name="mentors"></a>
         <div class="title">Наші ментори</div>
         <div class="mentors__slider">
           <div class="mentors__item">
             <img src="/img/viktor.png" alt="Virtor" width="340" height="340">
             <div class="mentors__description">
               <div class="mentors__title">Віктор</div>
+              <div class="mentors__text">
+                <p>Майбутнім управлінцям неабияк пощастило &mdash; адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник і CEO компанії InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.</p>
+                <p>Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все &mdash; саморозвиток для нього не закінчується жодної хвилини.</p>
+                <p>На книжкових Віктора полицях &mdash; сотні прочитаних книг про управління і не тільки. А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення. Тільки недавно він передавав усім привіт з Ельбрусу &mdash; найвищої точки Європи.</p>
+                <p>Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви таке пропустите? Записуйтесь уже зараз!</p>
+              </div>
+            </div>
+          </div>
+          <div class="mentors__item">
+            <img src="/img/vova.png" alt="Vova" width="340" height="340">
+            <div class="mentors__description">
+              <div class="mentors__title">Вова</div>
               <div class="mentors__text">
                 <p>Майбутнім управлінцям неабияк пощастило &mdash; адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник і CEO компанії InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.</p>
                 <p>Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все &mdash; саморозвиток для нього не закінчується жодної хвилини.</p>

@@ -1,11 +1,12 @@
 $(document).ready(function(){
   
   $('.course__slider').slick({
-    dots: false,
+    arrows: false,
+    dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 1024,
@@ -41,7 +42,7 @@ $(document).ready(function(){
     fade: true,
     speed: 1000,
     autoplay: true,
-    autoplaySpeed: 500,
+    autoplaySpeed: 10000,
     arrows: false,
     dots: true,
     // infinite: true,
@@ -50,11 +51,14 @@ $(document).ready(function(){
   });
   
   $('.mentors__slider').slick({
-    // fade: true,
+    fade:true,
+    dots:true,
+    // slidesToShow: 1,
     speed: 1000,
     autoplay: true,
-    autoplaySpeed: 500,
+    autoplaySpeed: 10000,
+    // slidesToScroll:1,
     arrows: false,
-    dots: true,
+    // adaptiveHeight: true,
   })
 })
