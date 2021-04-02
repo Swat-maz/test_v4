@@ -61,7 +61,7 @@ table {
 body {
   font-family: "Open Sanss";
   font-size: 16px;
-  min-width: 100%;
+  width: 100%;
   height: 100vh;
   line-height: 30px; }
 
@@ -77,15 +77,23 @@ body {
 
 .container {
   max-width: 1220px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 15px; }
 
 :focus {
   outline: none; }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden; }
+
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  width: 100%; }
 
 .blue {
   background-color: #3498db;
@@ -99,31 +107,29 @@ body {
 .italic {
   font-style: italic; }
 
-header {
-  position: fixed;
+.header {
   background-color: #ffffff;
   z-index: 1500;
   height: 100px;
-  min-width: 100%;
-  display: flex;
-  box-shadow: 0px 5px 5px 0px rgba(223, 223, 223, 0.6); }
-  header .container {
+  width: 100%;
+  box-shadow: 0px 5px 5px 0px rgba(223, 223, 223, 0.6);
+  position: fixed; }
+  .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1220px;
-    margin: 0 auto; }
-    header .container ul {
+    height: 100%; }
+    .header .container ul {
       display: flex;
       justify-content: center;
       align-items: center; }
-      header .container ul li {
+      .header .container ul li {
         display: flex;
         justify-content: space-between;
         margin: 0 9px; }
-        header .container ul li:last-child {
+        .header .container ul li:last-child {
           margin-right: 0; }
-      header .container ul a {
+      .header .container ul a {
         display: flex;
         align-items: center;
         padding: 0 10px;
@@ -131,10 +137,10 @@ header {
         font-size: 14px;
         text-decoration: none;
         color: #666666; }
-        header .container ul a:hover {
+        .header .container ul a:hover {
           background-color: #eeefef;
           color: #2f7bb8; }
-      header .container ul .zayava {
+      .header .container ul .zayava {
         background-color: #2f7bb8;
         color: #fff;
         border-radius: 20px;
@@ -144,7 +150,7 @@ header {
 .registration {
   margin-top: 100px;
   background-color: #f7f7f7;
-  width: auto;
+  width: 100%;
   height: 665px; }
   .registration .container {
     display: flex;
@@ -155,7 +161,7 @@ header {
     color: red; }
   .registration_info {
     line-height: 30px;
-    max-width: 50%;
+    width: 45%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -169,7 +175,7 @@ header {
       padding-top: 30px;
       color: #787878; }
   .registration_form {
-    max-width: 50%;
+    width: 50%;
     height: 100%;
     margin: 0 10px; }
     .registration_form h2 {
@@ -198,9 +204,10 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      height: 100%; }
+      height: 100%;
+      padding-bottom: 30px; }
     .registration_form #send {
-      width: 370px;
+      width: 100%;
       height: 50px;
       align-self: center;
       background-color: #337AB7;
@@ -221,19 +228,20 @@ header {
     .courses .container .title {
       margin-bottom: 40px; }
     .courses .container .slick-slider {
+      width: 100%;
       min-width: 0; }
     .courses .container .slick-list {
+      width: 100%;
       overflow: hidden;
       min-width: 0;
-      max-width: 1220px;
       margin: 0 auto; }
     .courses .container .slick-track {
       min-width: 0;
       display: flex;
-      justify-content: space-around;
-      width: 1170px; }
-    .courses .container .slick-slide {
-      width: 370px; }
+      width: 100%;
+      margin: 0 auto; }
+    .courses .container .slick-slide.slick-active {
+      width: 350px; }
     .courses .container .slick-dots {
       display: flex;
       justify-content: center;
@@ -253,21 +261,24 @@ header {
     .courses .container .post {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      text-align: center;
+      padding: 0 35px; }
       .courses .container .post img {
         margin-bottom: 20px; }
       .courses .container .post__title {
         color: #666666;
         font-size: 22px;
         border-bottom: 1px solid #3498db;
-        padding: 18px 0;
-        margin-bottom: 35px;
+        padding-bottom: 18px;
+        margin-bottom: 17px;
+        width: 100%;
         flex-wrap: nowrap; }
       .courses .container .post__body {
         color: #888888;
         text-align: center;
         font-size: 16px;
-        width: 320px; }
+        width: 100%; }
 
 .achieve {
   height: 310px; }
@@ -286,20 +297,24 @@ header {
   text-align: center;
   display: flex;
   justify-content: center;
-  height: 525px; }
+  min-height: 525px; }
   .reviews .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+    width: 100%; }
   .reviews__title {
-    margin-bottom: 14px; }
+    margin-bottom: 14px;
+    margin-top: 76px; }
   .reviews__text {
     font-size: 22px; }
   .reviews__person {
     margin-top: 40px; }
   .reviews .brackets {
-    display: flex; }
+    display: flex;
+    max-width: 976px;
+    margin: 0 auto; }
     .reviews .brackets__right {
       display: flex;
       flex-direction: column;
@@ -309,9 +324,9 @@ header {
     display: flex;
     flex-direction: column;
     min-width: 0;
+    width: 100%;
     overflow: hidden;
-    margin-bottom: 20px;
-    max-width: 980px; }
+    margin-bottom: 20px; }
   .reviews .slick-track {
     display: flex;
     overflow: hidden; }
@@ -321,7 +336,7 @@ header {
     justify-content: center;
     max-width: 1220px; }
   .reviews .slick-dots {
-    margin-top: 80px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: flex-end; }
@@ -345,6 +360,7 @@ header {
     text-align: center; }
     .videos .container iframe {
       margin-top: 30px;
+      max-width: 1020px;
       width: 100%; }
   .videos .title {
     margin-bottom: 30px; }

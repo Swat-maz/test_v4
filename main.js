@@ -1,10 +1,10 @@
-$(document).ready(function(){
-  
+$(document).ready(function(){  
   $('.course__slider').slick({
     arrows: false,
     dots: true,
     infinite: true,
     speed: 300,
+    // centerMode: true,
     slidesToShow: 3,
     slidesToScroll: 2,
     responsive: [
@@ -18,17 +18,17 @@ $(document).ready(function(){
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 850,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
           arrows: false,
-          dots: false,
+          dots: true,
           slidesToShow: 1,
           slidesToScroll: 1
         }

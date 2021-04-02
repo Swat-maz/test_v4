@@ -4,7 +4,7 @@
 body {
   font-family: "Open Sanss";
   font-size: 16px;
-  min-width: 100%;
+  width: 100%;
   height: 100vh;
   line-height: 30px;
   
@@ -26,16 +26,25 @@ body {
 .container {
   max-width: 1220px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 :focus {
   outline: none;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 }
 
 .blue {
@@ -54,26 +63,20 @@ body {
   font-style: italic;
 }
 
-header {
-  position: fixed;
+.header {
   background-color: #ffffff;
   z-index: 1500;
   height: 100px;
-  min-width: 100%;
-  display: flex;
+  width: 100%;
   box-shadow: 0px 5px 5px 0px rgba(223, 223, 223, 0.6);
-  
-  .menu {
-    // width: 65%;
-  }
-
+  position: fixed;
+  // padding: auto 0;
   // align-items: center;
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1220px;
-    margin: 0 auto;
+    height: 100%;
     ul{
       display: flex;
       justify-content: center;
@@ -116,10 +119,12 @@ header {
   }  
 }
 
+
+
 .registration {
   margin-top: 100px;
   background-color: #f7f7f7;
-  width: auto;
+  width: 100%;
   height: 665px;
   .container {
     display: flex;
@@ -133,7 +138,7 @@ header {
   
   &_info {
     line-height: 30px;
-    max-width: 50%;
+    width: 45%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -149,7 +154,7 @@ header {
     }
   }
   &_form {
-    max-width: 50%;
+    width: 50%;
     height: 100%;
     margin: 0 10px;
     // margin-top: 45px;
@@ -190,9 +195,10 @@ header {
       flex-direction: column;
       justify-content: space-around;
       height: 100%;
+      padding-bottom: 30px;
     }
     #send {
-      width: 370px;
+      width: 100%;
       height: 50px;
       align-self: center;
       background-color: #337AB7;
@@ -219,24 +225,30 @@ header {
       margin-bottom: 40px;
     }
     .slick-slider {
+      width: 100%;
       min-width: 0;
       // width: 30%;
     }
     .slick-list {
+      width: 100%;
       overflow: hidden;
       min-width: 0;
-      max-width: 1220px;
+      // max-width: 1170px;
+
       margin: 0 auto;
 
     }
     .slick-track {
       min-width: 0;
       display: flex;
-      justify-content: space-around;
-      width: 1170px;
+      width: 100%;
+      margin: 0 auto;
+      // justify-content: space-around;
+      // width: 1170px;
     }
-    .slick-slide {
-      width: 370px;
+    .slick-slide.slick-active {
+      width: 350px;
+      // margin: 0 auto;
     }
     .slick-dots{
       display: flex;
@@ -262,6 +274,9 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
+      // margin-left: 70px;
+      padding: 0 35px;
       img {
         margin-bottom: 20px;
       }
@@ -269,15 +284,16 @@ header {
         color: #666666;
         font-size: 22px;
         border-bottom: 1px solid #3498db;
-        padding: 18px 0;
-        margin-bottom: 35px;
+        padding-bottom: 18px;
+        margin-bottom: 17px;
+        width: 100%;
         flex-wrap: nowrap;
       }
       &__body {
         color: #888888;
         text-align: center;
         font-size: 16px;
-        width: 320px;
+        width: 100%;
       }
     }
   }
@@ -307,17 +323,19 @@ header {
   text-align: center;
   display: flex;
   justify-content: center;
-  height: 525px;
+  min-height: 525px;
   // top: 50%;
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
     // width: 980px;
   }
   &__title {
     margin-bottom: 14px;
+    margin-top: 76px;
   }
   &__text {
     font-size: 22px;
@@ -327,6 +345,8 @@ header {
   }
   .brackets {
     display: flex;
+    max-width: 976px;
+    margin: 0 auto;
     &__right {
       display: flex;
       flex-direction: column;
@@ -338,9 +358,10 @@ header {
     display: flex;
     flex-direction: column;
     min-width: 0;
+    width: 100%;
     overflow: hidden;
     margin-bottom: 20px;
-    max-width: 980px;
+    // max-width: 980px;
   }
   .slick-slide{
     // overflow: hidden;
@@ -357,7 +378,7 @@ header {
     max-width: 1220px;
   }
   .slick-dots{
-    margin-top: 80px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -386,6 +407,7 @@ header {
     text-align: center;
     iframe {
       margin-top: 30px;
+      max-width: 1020px;
       width: 100%;
     }
   }
