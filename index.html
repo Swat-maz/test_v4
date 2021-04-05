@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/mobile.css">
+  <link rel="stylesheet" media="screen and (max-width: 850px)" href="/css/mobile.css">
+  <!-- <link rel="stylesheet" media="screen and (max-width: 600px)" href="/css/mob.css"> -->
   <!-- <link rel="stylesheet" href="/libs/slick/slick.css"> -->
   <!-- <link rel="stylesheet" href="/libs/slick/slick-theme.css"> -->
   <title>OxiT</title>
@@ -14,7 +15,10 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <img src="/img/logo_Oxit.png" alt="OxiT Logo" width="80" height="80">
+        <div class="header__logo">
+        <img src="/img/logo_Oxit.png" alt="OxiT Logo">
+        </div>
+        
         <div class="menu">
           <ul>
             <li><a href="#">Головна</a></li>
@@ -24,6 +28,11 @@
             <li><a href="#mentors">Ментори</a></li>
             <li><a class="zayava" href="#registration">Подати заявку</a></li>
           </ul>
+        </div>
+        <div class="header__burgbody">
+          <div class="header__burger">
+            <span></span>
+          </div>
         </div>
       </div>  
     </header>
@@ -38,27 +47,27 @@
         <div class="registration_form">
           <form id="myform" class="form__body" action="">
             <h2 class="mcolor">Зареєструватися на курси</h2>
-            <div class="form__item">
+            <div class="form__item scolor">
               <label for="name">Ім'я <span class="star">*</span></label>
               <input class="input" type="text" name="name"  minlength="2" required placeholder="Ім'я">
             </div>
-            <div class="form__item">
+            <div class="form__item scolor">
               <label for="last_name">Прізвище <span class="star">*</span></label>
               <input class="input" type="text" name="last_name"  minlength="2" required placeholder="Прізвище">
             </div>
-            <div class="form__item">
+            <div class="form__item scolor">
               <label for="interested">Мене більше цікавить <span class="star">*</span></label>
               <input class="input" type="text" name="interested"  minlength="2" maxlength="9" required placeholder="developer or QA" pattern="(developer)|(QA)">
             </div>
-            <div class="form__item">
+            <div class="form__item scolor">
               <label for="phone">Номер телефону <span class="star">*</span></label>
               <input class="input" type="tel" pattern="[\+][3][8]\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}\s[0-9]{3}" name="phone" required placeholder="Номер телефону: +38 XXX XX XX XXX">
             </div>
-            <div class="form__item">
+            <div class="form__item scolor">
               <label for="name">Email <span class="star">*</span></label>
               <input class="input" type="email" autocomplete="on" placeholder="Email"  name="email" required>
             </div>
-            <div class="scales">
+            <div class="scales scolor">
               <input type="checkbox" id="scales" name="scales" placeholder="" required>
               <label for="scales">Я погоджуюсь із <a id="wisited" href="">Політикою конфедеційності</a> <span class="star">*</span></label>
             </div>
@@ -105,22 +114,22 @@
     <div class="achieve blue">
       <div class="container">
         <div class="achieve__item">
-          <img src="/img/icons/statistic-icon-1.png" alt="icon" width="100" height="85">
+          <img src="/img/icons/statistic-icon-1.png" alt="icon" width="65" height="50">
           <div class="achieve__number">25</div>
           <div class="achive__title">курсів організовано</div>
         </div>
         <div class="achieve__item">
-          <img src="/img/icons/statistic-icon-2.png" alt="icon" width="100" height="85">
+          <img src="/img/icons/statistic-icon-2.png" alt="icon" width="63" height="50">
           <div class="achieve__number">836</div>
           <div class="achive__title">годин занять проведено</div>
         </div>
         <div class="achieve__item">
-          <img src="/img/icons/statistic-icon-3.png" alt="icon" width="100" height="85">
+          <img src="/img/icons/statistic-icon-3.png" alt="icon" width="63" height="50">
           <div class="achieve__number">500</div>
           <div class="achive__title">студентів навчено</div>
         </div>
         <div class="achieve__item">
-          <img src="/img/icons/statistic-icon-4.png" alt="icon" width="100" height="85">
+          <img src="/img/icons/statistic-icon-4.png" alt="icon" width="60" height="50">
           <div class="achieve__number">120</div>
           <div class="achive__title">випускників курсів працевлаштовано</div>
         </div>
@@ -183,7 +192,7 @@
       <div class="container">
         <div class="title mcolor">Відео</div>
         <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, non culpa quia excepturi nesciunt reiciendis vel facilis. Ipsa cupiditate deserunt nesciunt esse alias sapiente quas maiores minima vero debitis repellat, consequuntur neque possimus nisi nulla accusamus voluptate? Est nihil repudiandae magni dicta fugiat, accusantium praesentium reiciendis animi repellat earum ab modi maxime sed magnam. Blanditiis excepturi ipsam reiciendis possimus, deserunt quo voluptatem temporibus facilis suscipit laboriosam totam, eligendi tempora harum voluptatum necessitatibus minima recusandae aspernatur animi, molestiae similique accusamus in quod exercitationem neque. Necessitatibus ad illo placeat corporis est eligendi quibusdam nesciunt aliquid vitae amet! Tempora nobis aliquam eligendi voluptate.</div>
-        <iframe width="1020" height="520" src="https://www.youtube.com/embed/qEdviZqTDP8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/qEdviZqTDP8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
@@ -193,7 +202,7 @@
         <div class="title">Наші ментори</div>
         <div class="mentors__slider">
           <div class="mentors__item">
-            <img src="/img/viktor.png" alt="Virtor" width="340" height="340">
+            <img src="/img/viktor.png" alt="Virtor">
             <div class="mentors__description">
               <div class="mentors__title">Віктор</div>
               <div class="mentors__text">
@@ -205,7 +214,7 @@
             </div>
           </div>
           <div class="mentors__item">
-            <img src="/img/vova.png" alt="Vova" width="340" height="340">
+            <img src="/img/vova.png" alt="Vova">
             <div class="mentors__description">
               <div class="mentors__title">Вова</div>
               <div class="mentors__text">
@@ -217,7 +226,7 @@
             </div>
           </div>
           <div class="mentors__item">
-            <img src="/img/mark.png" alt="Mark" width="340" height="340">
+            <img src="/img/mark.png" alt="Mark">
             <div class="mentors__description">
               <div class="mentors__title">Марк</div>
               <div class="mentors__text">

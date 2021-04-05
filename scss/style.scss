@@ -1,6 +1,9 @@
 /* open-sans-regular - latin_cyrillic */
 @import 'reset', 'fonts';
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Open Sanss";
   font-size: 16px;
@@ -72,11 +75,21 @@ a.anchor {
   position: fixed;
   // padding: auto 0;
   // align-items: center;
+  &__logo {
+    flex: 0 0 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    & img {
+      max-width: 100%;
+    }
+  }
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    padding: 0;
     ul{
       display: flex;
       justify-content: center;
@@ -119,12 +132,17 @@ a.anchor {
   }  
 }
 
+.header__burgbody {
+  display: none;
+}
+
 
 
 .registration {
   margin-top: 100px;
   background-color: #f7f7f7;
   width: 100%;
+  padding: 0;
   height: 665px;
   .container {
     display: flex;
@@ -138,16 +156,18 @@ a.anchor {
   
   &_info {
     line-height: 30px;
-    width: 45%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 30px;
-    margin-top: 48px;
+    padding-right: 25px;
+    // margin: 0 30px;
+    margin-top: 105px;
     p {
-      font-size: 20px;
+      padding: 0 23px;
+      font-size: 18px;
       text-align: center;
       padding-top: 30px;
       color: #787878;
@@ -156,7 +176,8 @@ a.anchor {
   &_form {
     width: 50%;
     height: 100%;
-    margin: 0 10px;
+    padding-left: 25px;
+    // margin: 0 10px;
     // margin-top: 45px;
     h2 {
       font-size: 22px;
@@ -166,7 +187,7 @@ a.anchor {
       // margin-top: 13px;
       .input {
         width: 100%;
-        height: 50px;
+        height: 52px;
         border: 1px solid #bababa;
         border-radius: 5px;
         margin-top: 5px;
@@ -198,7 +219,7 @@ a.anchor {
       padding-bottom: 30px;
     }
     #send {
-      width: 100%;
+      width: 65%;
       height: 50px;
       align-self: center;
       background-color: #337AB7;
@@ -303,6 +324,8 @@ a.anchor {
 
 .achieve {
   height: 310px;
+  // display: flex;
+  // align-items: center;
   .container{
     height: 100%;
     display: flex;
@@ -311,10 +334,10 @@ a.anchor {
   }
   &__item {
     text-align: center;
-
+    width: 25%;
   }
   &__number {
-    font-size: 25px;
+    font-size: 26px;
   }
 }
 
@@ -329,7 +352,7 @@ a.anchor {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     // width: 980px;
   }
@@ -347,6 +370,11 @@ a.anchor {
     display: flex;
     max-width: 976px;
     margin: 0 auto;
+    &__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
     &__right {
       display: flex;
       flex-direction: column;
@@ -362,10 +390,6 @@ a.anchor {
     overflow: hidden;
     margin-bottom: 20px;
     // max-width: 980px;
-  }
-  .slick-slide{
-    // overflow: hidden;
-    // width: 100%;
   }
   .slick-track {
     display: flex;
@@ -403,11 +427,12 @@ a.anchor {
 .videos {
   background-color: #f7f7f7;
   .container {
-    padding: 65px 0;
+    padding: 65px 15px;
     text-align: center;
     iframe {
+      max-width: 1020px; 
+      height: 30vw;
       margin-top: 30px;
-      max-width: 1020px;
       width: 100%;
     }
   }
@@ -421,11 +446,11 @@ a.anchor {
   background-color: #fff;
   .container {
     // display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
     // text-align: center;
-    min-width: 0;
+    // min-width: 0;
   }
   &__slider {
     min-width: 0;
@@ -441,6 +466,8 @@ a.anchor {
     // max-width: 1120px;
     img {
     margin-right: 100px;
+    width: 320px;
+    height: 340px;
     }
   }
   &__title {
@@ -555,6 +582,7 @@ a.anchor {
   }
   &__item {
     text-align: center;
+    width: 25%;
   }
 }
 

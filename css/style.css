@@ -58,6 +58,9 @@ table {
   font-style: normal;
   font-weight: normal; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "Open Sanss";
   font-size: 16px;
@@ -114,11 +117,19 @@ a.anchor {
   width: 100%;
   box-shadow: 0px 5px 5px 0px rgba(223, 223, 223, 0.6);
   position: fixed; }
+  .header__logo {
+    flex: 0 0 80px;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .header__logo img {
+      max-width: 100%; }
   .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%; }
+    height: 100%;
+    padding: 0; }
     .header .container ul {
       display: flex;
       justify-content: center;
@@ -147,10 +158,14 @@ a.anchor {
         width: 139px;
         justify-content: center; }
 
+.header__burgbody {
+  display: none; }
+
 .registration {
   margin-top: 100px;
   background-color: #f7f7f7;
   width: 100%;
+  padding: 0;
   height: 665px; }
   .registration .container {
     display: flex;
@@ -161,29 +176,30 @@ a.anchor {
     color: red; }
   .registration_info {
     line-height: 30px;
-    width: 45%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 30px;
-    margin-top: 48px; }
+    padding-right: 25px;
+    margin-top: 105px; }
     .registration_info p {
-      font-size: 20px;
+      padding: 0 23px;
+      font-size: 18px;
       text-align: center;
       padding-top: 30px;
       color: #787878; }
   .registration_form {
     width: 50%;
     height: 100%;
-    margin: 0 10px; }
+    padding-left: 25px; }
     .registration_form h2 {
       font-size: 22px;
       margin-top: 50px; }
     .registration_form .form__item .input {
       width: 100%;
-      height: 50px;
+      height: 52px;
       border: 1px solid #bababa;
       border-radius: 5px;
       margin-top: 5px;
@@ -207,7 +223,7 @@ a.anchor {
       height: 100%;
       padding-bottom: 30px; }
     .registration_form #send {
-      width: 100%;
+      width: 65%;
       height: 50px;
       align-self: center;
       background-color: #337AB7;
@@ -288,9 +304,10 @@ a.anchor {
     align-items: center;
     justify-content: space-around; }
   .achieve__item {
-    text-align: center; }
+    text-align: center;
+    width: 25%; }
   .achieve__number {
-    font-size: 25px; }
+    font-size: 26px; }
 
 .reviews {
   background-color: #fff;
@@ -302,7 +319,7 @@ a.anchor {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%; }
   .reviews__title {
     margin-bottom: 14px;
@@ -315,6 +332,10 @@ a.anchor {
     display: flex;
     max-width: 976px;
     margin: 0 auto; }
+    .reviews .brackets__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: start; }
     .reviews .brackets__right {
       display: flex;
       flex-direction: column;
@@ -356,22 +377,18 @@ a.anchor {
 .videos {
   background-color: #f7f7f7; }
   .videos .container {
-    padding: 65px 0;
+    padding: 65px 15px;
     text-align: center; }
     .videos .container iframe {
-      margin-top: 30px;
       max-width: 1020px;
+      height: 30vw;
+      margin-top: 30px;
       width: 100%; }
   .videos .title {
     margin-bottom: 30px; }
 
 .mentors {
   background-color: #fff; }
-  .mentors .container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 0; }
   .mentors__slider {
     min-width: 0; }
   .mentors .title {
@@ -382,7 +399,9 @@ a.anchor {
     display: flex;
     min-width: 0; }
     .mentors__item img {
-      margin-right: 100px; }
+      margin-right: 100px;
+      width: 320px;
+      height: 340px; }
   .mentors__title {
     font-size: 21px;
     padding-bottom: 20px;
@@ -444,7 +463,8 @@ a.anchor {
   justify-content: space-around; }
 
 .contacts__item {
-  text-align: center; }
+  text-align: center;
+  width: 25%; }
 
 .footer {
   margin-top: auto;
